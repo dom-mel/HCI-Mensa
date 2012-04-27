@@ -1,0 +1,23 @@
+span.math {
+	font-family: courier-new, serif;
+}
+
+.overline {
+    text-decoration: overline;
+}
+p {
+    text-align: justify;
+}
+
+.caption p {
+    text-align: left;
+}
+
+img.math {
+    display: block;
+    margin: 0 auto;
+}
+
+img.map {
+    width: 90%;
+}
