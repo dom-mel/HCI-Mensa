@@ -10,7 +10,7 @@ $districts = array('Mitte', 'Friedrichshain-Kreuzberg', 'Pankow', 'Charlottenbur
     <div class="span12">
         <h2>Mensa in Berlin</h2>
         <p>
-            lorem ipsum
+            Bitte wählen sie eine Mensa
         </p>
     </div>
 </div>
@@ -18,9 +18,9 @@ $districts = array('Mitte', 'Friedrichshain-Kreuzberg', 'Pankow', 'Charlottenbur
 <div class="row">
     <div class="span6">
         <p>
-            Filter:
-            <select>
-                <option value="">Bezirk</option>
+            <label for="district">Bezirk:</label>
+            <select id="district">
+                <option value="">Alle</option>
                 <?php foreach ($districts as $district): ?>
                     <option><?php echo htmlspecialchars($district) ?></option>
                 <?php endforeach ?>
@@ -29,8 +29,8 @@ $districts = array('Mitte', 'Friedrichshain-Kreuzberg', 'Pankow', 'Charlottenbur
     </div>
     <div class="span6">
         <p>
-            Suchen
-            <input type="text" />
+            <label for="form_search">Mensa suchen:</label>
+            <input id="form_search" type="text" />
         </p>
     </div>
 </div>
@@ -38,14 +38,14 @@ $districts = array('Mitte', 'Friedrichshain-Kreuzberg', 'Pankow', 'Charlottenbur
 <div class="row">
     <div class="span6">
         <h2>Karte</h2>
-        <img class="map" src="http://maps.google.com/maps/api/staticmap?center=52.489397,13.410437&zoom=11&size=500x500&sensor=false" alt="Berlin Übersicht" />
+        <img class="map" src="http://maps.google.com/maps/api/staticmap?center=52.489397,13.410437&zoom=11&size=500x500&sensor=false" alt="" />
     </div>
 
     <div class="span6">
         <h2>Mensen</h2>
         <ul>
             <?php foreach ($districts as $district): ?>
-            <li><?php echo htmlspecialchars($district) ?></li>
+            <li><a href="plan.php"><?php echo htmlspecialchars($district) ?></a></li>
             <?php endforeach; ?>
         </ul>
     </div>
