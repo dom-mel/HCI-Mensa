@@ -7,11 +7,12 @@ include dirname(__FILE__).'/tpl/header.php';
     <div class="span12">
         <h2>
             Cafeteria FU Königin-Luise-Str.
-            <img src="star_off.gif" alt="Favorit" style="margin-bottom: .5em;" />
+            <img src="star_off.gif" alt="Favorit" style="margin-bottom: .5em;" class="fav" />
         </h2>
         <p>
-            Lorim Ipsum Dolor...
-
+            Speiseplan für den <span class="date">1.5.2012</span>
+        </p>
+        <p>
             <label for="price">Preise für</label>
             <select id="price">
                 <option>Studierende</option>

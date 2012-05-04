@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Mensa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         body {
             padding-top: 60px;
@@ -19,6 +19,7 @@
     <![endif]-->
     <link href="css/my.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery.js"></script>
+    <link href="css/print.css" rel="stylesheet" media="print" />
 </head>
 
 <body>

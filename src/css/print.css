@@ -1,0 +1,27 @@
+.noprint {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+label {
+    display: inline;
+}
+
+select {
+    display: inline;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.nav.nav-tabs {
+    display: none;
+}
+
+img.fav {
+    display: none;
+}
