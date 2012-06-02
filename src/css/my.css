@@ -21,3 +21,11 @@ img.math {
 img.map {
     width: 90%;
 }
+
+table caption {
+    font-weight: bold;
+}
+
+img.favorite {
+    cursor: pointer;
+}

@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Mensa</a>
+            <a class="brand" href="index.php">Mensa</a>
             <div class="nav-collapse">
                 <ul class="nav">
                     <li class="active"><a href="#">Standort</a></li>

@@ -7,7 +7,7 @@ include dirname(__FILE__).'/tpl/header.php';
     <div class="span12">
         <h2>
             Cafeteria FU Königin-Luise-Str.
-            <img src="star_off.gif" alt="Favorit" style="margin-bottom: .5em;" />
+            <img src="star_off.gif" class="favorite" alt="Favorit" style="margin-bottom: .5em;" />
         </h2>
         <p>
             Lorim Ipsum Dolor...
@@ -35,22 +35,44 @@ include dirname(__FILE__).'/tpl/header.php';
             <li><a href="#">Montag</a></li>
             <li><a href="#">Dienstag</a></li>
         </ul>
-        <table class="table table-condens">
+    </div>
+    <div class="span6">
+        <table class="table table-striped">
+            <caption>
+                Hauptgerichte
+            </caption>
             <tr>
-                <td colspan="2">Grünkern - Mozzarellasalat</td>
+                <td>Grünkern - Mozzarellasalat</td>
                 <td>1.30 €</td>
             </tr>
             <tr>
-                <td rowspan="2" style=""> </td>
-                <td>Zwei Kartoffelklöße</td>
-                <td>0.70 €</td>
+                <td>Grünkern - Mozzarellasalat</td>
+                <td>1.30 €</td>
             </tr>
             <tr>
-                <td>Gemüsereis</td>
-                <td>0.50 €</td>
+                <td>Grünkern - Mozzarellasalat</td>
+                <td>1.30 €</td>
             </tr>
         </table>
     </div>
+    <div class="span6">
+        <table class="table table-striped">
+            <caption>Beilagen</caption>
+            <tr>
+                <td>Grünkern - Mozzarellasalat</td>
+                <td>1.30 €</td>
+            </tr>
+            <tr>
+                <td>Grünkern - Mozzarellasalat</td>
+                <td>1.30 €</td>
+            </tr>
+            <tr>
+                <td>Grünkern - Mozzarellasalat</td>
+                <td>1.30 €</td>
+            </tr>
+        </table>
+    </div>
+
 </div>
 
 <hr />
