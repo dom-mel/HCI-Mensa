@@ -1,0 +1,200 @@
+{"mensen":[
+    {
+        "mensa_ID":"fu1",
+        "mensa_title":"Veggie Nr.1-Die gr\u00fcne Men",
+        "mensa_name":"Veggie No 1",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"fu2",
+        "mensa_title":"Mensa FU II Otto-v.-Sims.",
+        "mensa_name":"FU II Otto-v.-Sims.",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"fu_lankwitz",
+        "mensa_title":"Mensa FU Lankwitz",
+        "mensa_name":"FU Lankwitz",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"fu_assmannshauser",
+        "mensa_title":"Mensa FU A\u00dfmannshauserStr",
+        "mensa_name":"FU A\u00dfmannshauser",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_dueppel",
+        "mensa_title":"Mensa FU D\u00fcppel",
+        "mensa_name":"FU D\u00fcppel",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_cafeteria",
+        "mensa_title":"Cafeteria FU Koserstra\u00dfe",
+        "mensa_name":"FU Koserstra\u00dfe",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_cafe_koenigin_luise",
+        "mensa_title":"Caf. FU K\u00f6nigin-Luise-St",
+        "mensa_name":"FU K\u00f6nigin-Luise-Str.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_cafe_vant_hoff",
+        "mensa_title":"Cafeteria FU V.-Hoff-Str",
+        "mensa_name":"FU V.-Hoff-Str.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_cafe_ihne",
+        "mensa_title":"Cafeteria FU Ihnestra\u00dfe",
+        "mensa_name":"FU Ihnestr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"fu_cafe_gary",
+        "mensa_title":"Cafet. FU Garystra\u00dfe",
+        "mensa_name":"FU Garystr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"tu",
+        "mensa_title":"Mensa TU Hardenbergstra\u00dfe",
+        "mensa_name":"TU Hardenbergstr.",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"tu_cafeteria",
+        "mensa_title":"Cafeteria TU Franklinstr.",
+        "mensa_name":"TU Franklinstr.",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"tu_ackerstr",
+        "mensa_title":"Cafeteria TU Ackerstra\u00dfe",
+        "mensa_name":"TU Ackerstr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"tu_cafe_erp",
+        "mensa_title":"Cafeteria TU E.-Reuter-Pl",
+        "mensa_name":"TU E.-Reuter-Platz",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"tu_cafe_skyline",
+        "mensa_title":"Cafeteria TU Skyline",
+        "mensa_name":"TU Skyline",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"hu_nord",
+        "mensa_title":"Mensa HU Nord",
+        "mensa_name":"HU Nord",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"hu_sued",
+        "mensa_title":"Mensa HU S\u00fcd",
+        "mensa_name":"HU S\u00fcd",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"hu_adlershof",
+        "mensa_title":"Mensa HU Oase Adlershof",
+        "mensa_name":"HU Oase Adlershof",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"hu_spandauer",
+        "mensa_title":"Mensa HU Spandauer Str.",
+        "mensa_name":"HU Spandauer Str.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"hu_cafe_grimm",
+        "mensa_title":"Caf. HU, Grimm-Zentrum",
+        "mensa_name":"HU Grimm-Zentrum",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"udk_jazzcafe",
+        "mensa_title":"Cafeteria UdK Jazz Cafe",
+        "mensa_name":"UdK Jazz Cafe",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"htw_treskow",
+        "mensa_title":"Mensa HTWB Treskowallee",
+        "mensa_name":"HTWB Treskowallee",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"htw_wilhelminenhof",
+        "mensa_title":"Mensa HTWB Wilhelminenhof",
+        "mensa_name":"HTWB Wilhelminenhof",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"hwr",
+        "mensa_title":"Mensa HWRB Badensche Str.",
+        "mensa_name":"HWRB Badensche Str.",
+        "mensacard_only":true
+    },
+    {
+        "mensa_ID":"beuth",
+        "mensa_title":"Mensa BHT Luxemburger Str",
+        "mensa_name":"BHT Luxemburger",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"beuth_kurfuersten",
+        "mensa_title":"Mensa BHT Kurf\u00fcrstenstr.",
+        "mensa_name":"BHT Kurf\u00fcrstenstr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"hfm",
+        "mensa_title":"Mensa HfM Charlottenstr.",
+        "mensa_name":"HfM Charlottenstr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"hfm_cafeteria",
+        "mensa_title":"Caf. HfM Neuer Marstall",
+        "mensa_name":"HfM Neuer Marstall",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"ashb",
+        "mensa_title":"Mensa ASH Berlin",
+        "mensa_name":"ASH Hellersdorf",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"hfs",
+        "mensa_title":"Mensa HSF Schnellerstr.",
+        "mensa_name":"HSF Schnellerstr.",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"khs",
+        "mensa_title":"Mensa KHS Wei\u00dfensee",
+        "mensa_name":"KHS Wei\u00dfensee",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"khsb",
+        "mensa_title":"Mensa KHSB Karlshorst",
+        "mensa_name":"KHSB Karlshorst",
+        "mensacard_only":false
+    },
+    {
+        "mensa_ID":"ehb",
+        "mensa_title":"Mensa EHB Teltower Damm",
+        "mensa_name":"EHB Teltower Damm",
+        "mensacard_only":true
+    }
+], "default_mensa":"fu1", "hash":"586670019aa1cdd50ea8d94abb152e04"}
