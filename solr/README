@@ -1,0 +1,39 @@
+*******************************************************************
+***          HOW TO SETUP SOLR FOR HCI MENSA APP                ***
+*******************************************************************
+
+
+1. Solr runterladen: http://lucene.apache.org/solr
+   -> Download Solr 3.6
+
+2. Irgendwohin entpacken
+
+2. cd solr_ordner/example/solr/conf
+
+3. rm schema.xml
+
+4. rm solrconfig.xml
+
+5. ln -s hci_mensa_ordner/solr/schema.xml schema.xml
+
+6. ln -s hci_mensa_ordner/solr/solrconfig.xml solrconfig.xml
+
+7. cd solr_ordner/example
+
+8. java -jar start.jar
+   -> Solr sollte ohne meckern hochkommen
+   -> kann man jetzt auch laufen lassen
+
+9. neue konsole aufmachen
+
+10. cd solr_ordner/example/exampledocs
+
+11. ln -s hci_mensa_ordner/solr/mensen.xml mensen.xml
+
+12. java -jar post.jar mensen.xml
+    -> wenn am ende des outputs steht "commiting solr index changes..." ist es gut gegangen
+
+13. http://localhost:8983/solr/select/?q=*:*
+    -> sollte ergebnisse liefern
+
+Fertig!
