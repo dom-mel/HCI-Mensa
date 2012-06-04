@@ -1,0 +1,20 @@
+<add>
+	<doc>
+        <field name="id"><![CDATA[fu1]]></field>
+        <field name="title"><![CDATA[Veggie Nr.1-Die gr\u00fcne Men]]></field>
+        <field name="name"><![CDATA[Veggie No 1]]></field>
+        <field name="mensacard_only"><![CDATA[true]]></field>
+    </doc>
+    <doc>
+        <field name="id"><![CDATA[fu2]]></field>
+        <field name="title"><![CDATA[Mensa FU II Otto-v.-Sims.]]></field>
+        <field name="name"><![CDATA[FU II Otto-v.-Sims.]]></field>
+        <field name="mensacard_only"><![CDATA[true]]></field>
+    </doc>
+    <doc>
+        <field name="id"><![CDATA[fu_lankwitz]]></field>
+        <field name="title"><![CDATA[Mensa FU Lankwitz]]></field>
+        <field name="name"><![CDATA[FU Lankwitz]]></field>
+        <field name="mensacard_only"><![CDATA[true]]></field>
+    </doc>
+</add>

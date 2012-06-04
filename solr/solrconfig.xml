@@ -91,7 +91,12 @@
   <lib dir="../../dist/" regex="apache-solr-velocity-\d.*\.jar" />
   <lib dir="../../contrib/velocity/lib" regex=".*\.jar" />
 
-  <!-- an exact 'path' can be used instead of a 'dir' to specify a
+  <!-- If a 'dir' option (with or without a regex) is used and nothing
+       is found that matches, it will be ignored
+    -->
+  <lib dir="/total/crap/dir/ignored" />
+
+  <!-- an exact 'path' can be used instead of a 'dir' to specify a 
        specific file.  This will cause a serious error to be logged if 
        it can't be loaded.
     -->
@@ -721,7 +726,6 @@
        <str name="echoParams">explicit</str>
        <int name="rows">10</int>
        <str name="df">catch_all</str>
-       <str name="wt">json</str>
      </lst>
     <!-- In addition to defaults, "appends" params can be specified
          to identify values which should be appended to the list of
