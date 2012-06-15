@@ -16,7 +16,7 @@ function solrQuery(query, district) {
     query = encodeURI(query);
     district = encodeURI(district);
 
-    return 'http://192.168.1.87:8983/solr/select/?q=' + query + '&fq=' + district + '&rows=1000&wt=json&sort=name%20asc&facet.sort=index';
+    return 'http://127.0.0.1:8983/solr/select/?q=' + query + '&fq=' + district + '&rows=1000&wt=json&sort=name%20asc&facet.sort=index';
 }
 
 function update() {
