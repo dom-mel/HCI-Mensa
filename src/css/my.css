@@ -29,3 +29,7 @@ table caption {
 img.favorite {
     cursor: pointer;
 }
+
+#map_canvas {
+    height: 500px;
+}

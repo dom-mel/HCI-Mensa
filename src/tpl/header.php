@@ -15,11 +15,19 @@
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     <link href="css/my.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <link href="css/print.css" rel="stylesheet" media="print" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <?php
+    if (isset($additionalJs)) {
+?>
+        <script type="text/javascript" src="js/<?php echo $additionalJs ?>"></script>
+<?php
+    }
+    ?>
 </head>
 
 <body>
