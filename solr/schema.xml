@@ -493,6 +493,7 @@
      <field name="lat" type="sdouble" indexed="true" stored="true"/>
      <field name="lng" type="sdouble" indexed="true" stored="true"/>
      <field name="mensacard_only" type="boolean" indexed="true" stored="true" />
+     <field name="district" type="string" indexed="true" stored="true" />
 
      <!-- Unindexed fields -->
      <field name="imageUrl" type="string" indexed="false" stored="true"/>
@@ -507,9 +508,8 @@
 <uniqueKey>id</uniqueKey>
 
     <copyField source="title" dest="catch_all" />
-    <!--<copyField source="name" dest="catch_all" />-->
-<!--
+    <copyField source="name" dest="catch_all" />
     <copyField source="address" dest="catch_all" />
     <copyField source="zip" dest="catch_all" />
--->
+    <copyField source="district" dest="catch_all" />
 </schema>
