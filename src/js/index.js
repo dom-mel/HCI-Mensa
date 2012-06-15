@@ -45,7 +45,7 @@ function updateList(data){
     $.each(data, function(key, val) {
 
         var a = $("<a></a>")
-            .attr('href', 'plan.php#' + val.id)
+            .attr('href', 'plan.php?id=' + val.id)
             .attr('title', val.title)
             .text(val.name);
 
@@ -90,7 +90,7 @@ function updateMarker(data) {
         });
 
         google.maps.event.addListener(marker, 'click', function(){
-            window.location.href = "plan.php#" + val.id;
+            window.location.href = "plan.php?id=" + val.id;
         });
 
         marker.setMap(map);
