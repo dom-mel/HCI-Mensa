@@ -19,7 +19,11 @@ function printTable($caption, $data, $types) {
                         $count++;
                         ?>
                         <tr>
-                            <td><?php out($meal->name) ?></td>
+                            <td>
+                                <?php plan_icons($meal) ?>
+                                <?php out($meal->name) ?>
+                                <?php plan_additions($meal) ?>
+                            </td>
                             <td class="priceRow">
                                 <nobr>
                                     <span class="price1"><?php echo number_format($meal->preis_1, 2, ',', '.') ?> €</span>

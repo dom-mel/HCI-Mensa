@@ -2,6 +2,7 @@
 
 require dirname(__FILE__) . '/plan.class.php';
 require dirname(__FILE__) . '/tpl/mealtable.php';
+require dirname(__FILE__) . '/plan.helper.php';
 $plan = new Plan();
 $data = $plan->getMeals();
 
