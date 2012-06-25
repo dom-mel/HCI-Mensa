@@ -1,6 +1,10 @@
 <?php
 $additionalJs ='index.js';
 include dirname(__FILE__).'/tpl/header.php';
+if (isset($_COOKIE['fav_mensa']) && !isset($_GET['force'])) {
+    header('Location: plan.php?id='.urlencode($_COOKIE['fav_mensa']));
+    exit;
+}
 ?>
 
 

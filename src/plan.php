@@ -15,7 +15,7 @@ include dirname(__FILE__).'/tpl/header.php';
     <div class="span12">
         <h2>
             <?php out($data['name']) ?>
-            <img src="star_off.gif" class="favorite" alt="Favorit" style="margin-bottom: .5em;" />
+            <?php favoriteIcon($_GET['id']) ?>
         </h2>
         <p>
             <label style="display: inline;" for="price">Speiseplan mit Preisen für</label>

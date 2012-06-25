@@ -26,3 +26,45 @@ $(document).ready(function() {
         });
     }
 });
+
+$(document).ready(function(){
+    function getURLParameter(name) {
+        return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+        );
+    }
+
+    function setFav() {
+        icon.attr('src', 'star_on.png');
+        icon.attr('title', 'Klicken um Favorit zu entfernen');
+        icon.attr('alt', 'Favorit');
+    }
+
+    function unsetFav() {
+        icon.attr('src', 'star_off.gif');
+        icon.attr('title', 'Klicken um zum Favorit zu machen');
+        icon.attr('alt', 'Favorit');
+    }
+
+    var id = getURLParameter('id');
+    var icon = $('#fav');
+    var favorite = icon.attr('src') === 'star_on.png';
+    icon.click(function() {
+        favorite = !favorite;
+        if (favorite) {
+            $.ajax({
+                url: 'favorite.php',
+                data: {id: id},
+                success: setFav,
+                dataType: 'html'
+            });
+        } else {
+            $.ajax({
+                url: 'favorite.php',
+                data: {},
+                success: unsetFav(),
+                dataType: 'html'
+            });
+        }
+    });
+});

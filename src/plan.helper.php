@@ -33,3 +33,18 @@ function plan_addition($nr, $name) {
         htmlspecialchars($name)
     );
 }
+
+function isFavorite($id) {
+    if (!isset($_COOKIE['fav_mensa'])) {
+        return false;
+    }
+    return ($_COOKIE['fav_mensa'] === $id);
+}
+
+function favoriteIcon($id) {
+    if (isFavorite($id)) {
+        echo '<img id="fav" src="star_on.png" class="favorite" title="Klicken um Favorit zu entfernen" alt="Favorit" style="margin-bottom: .5em;" />';
+    } else {
+        echo '<img id="fav" src="star_off.gif" class="favorite" title="Klicken um zum Favorit zu machen" alt="Favorit" style="margin-bottom: .5em;" />';
+    }
+}
