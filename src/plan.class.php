@@ -37,6 +37,14 @@ class Plan {
             }
 
             $result["$day"]["$type"][] = $meal;
+
+            if (!isset($result["$day"]['addition'])) {
+                $result["$day"]['addition'] = array();
+            }
+            foreach ($meal->zusaetze as $addition) {
+                $result["$day"]['addition']["{$addition->nr}"] = $addition->name;
+            }
+
         }
 
         return $result;

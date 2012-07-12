@@ -70,6 +70,26 @@ include dirname(__FILE__).'/tpl/header.php';
     <?php printTable('Dessert', $data, array('8', '94')) ?>
 </div>
 
+    <hr/>
+
+<div class="row">
+    <div class="span12">
+        <h2>Zus&auml;tze</h2>
+    </div>
+    <?php $day = 0; ?>
+    <?php foreach ($data['meals'] as $meals){ ?>
+        <?php ksort($meals['addition'])?>
+        <div class="day<?php out($day) ?>">
+        <?php foreach ($meals['addition'] as $nr => $name){ ?>
+            <div class="span4">
+                <b><?php out($nr) ?></b> <?php out($name) ?>
+            </div>
+        <?php } ?>
+        </div>
+        <?php $day++ ?>
+    <?php } ?>
+</div>
+
 <hr />
 
 <?php include dirname(__FILE__).'/tpl/footer.php' ?>
