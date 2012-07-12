@@ -34,15 +34,15 @@ if (isset($_COOKIE['fav_mensa']) && !isset($_GET['force'])) {
 </div>
 
 <div class="row">
-    <div class="span6" tabstop="-1">
-        <h2>Karte</h2>
-        <div id="map_canvas"></div>
-    </div>
-
     <div class="span6">
         <h2>Mensen</h2>
         <ul id="resultList">
         </ul>
+    </div>
+
+    <div class="span6" tabstop="-1">
+        <h2>Karte</h2>
+        <div id="map_canvas"></div>
     </div>
 </div>
 
