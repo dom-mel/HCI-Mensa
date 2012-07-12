@@ -37,3 +37,16 @@ img.favorite {
 .priceRow {
     width: 2em;
 }
+
+.addition {
+    display: inline;
+}
+
+.addition .addition-hover {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 1em;
+}

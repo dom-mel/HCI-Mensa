@@ -22,9 +22,17 @@ function plan_icon($img, $title) {
 }
 
 function plan_additions($meal) {
+    if (count($meal->zusaetze) === 0) {
+        return;
+    }
+    echo '<div class="addition">';
     foreach ($meal->zusaetze as $addition) {
         plan_addition($addition->nr, $addition->name);
     }
+    echo '<div class="addition-hover">';
+    plan_addition_list($meal);
+    echo '</div>';
+    echo '</div>';
 }
 
 function plan_addition($nr, $name) {
@@ -32,6 +40,14 @@ function plan_addition($nr, $name) {
         htmlspecialchars($nr),
         htmlspecialchars($name)
     );
+}
+
+function plan_addition_list($meal) {
+    echo '<ul>';
+    foreach ($meal->zusaetze as $addition) {
+        echo '<li>'.htmlspecialchars($addition->name).'</dd>';
+    }
+    echo '</ul>';
 }
 
 function isFavorite($id) {
