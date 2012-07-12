@@ -59,8 +59,8 @@ function isFavorite($id) {
 
 function favoriteIcon($id) {
     if (isFavorite($id)) {
-        echo '<img id="fav" src="star_on.png" class="favorite" title="Klicken um Favorit zu entfernen" alt="Favorit" style="margin-bottom: .5em;" />';
+        echo '<img id="fav" src="star_on.png" class="favorite" title="Klicken um Favorit zu entfernen" alt="als Favorit markiert - Klicken um Markierung zu entfernen" style="margin-bottom: .5em;" />';
     } else {
-        echo '<img id="fav" src="star_off.gif" class="favorite" title="Klicken um zum Favorit zu machen" alt="Favorit" style="margin-bottom: .5em;" />';
+        echo '<img id="fav" src="star_off.gif" class="favorite" title="Klicken um zum Favorit zu machen" alt="nicht als Favorit markiert - Klicken um zu Markieren" style="margin-bottom: .5em;" />';
     }
 }
