@@ -71,16 +71,12 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 
-    var toggle = function() {
-        //$('.addition-hover').hide();
+    $.each($('.addition'), function() {
         var hover = $(this).find('.addition-hover');
-        hover.show();
-    }
-
-    $('.addition').mouseenter(toggle);
-    $('.addition').click(toggle);
-
-    $('.addition').mouseleave(function(){
-        $(this).find('.addition-hover').hide();
+        $(this).popover({
+            title: 'Zusatzstoffe',
+            content: hover
+        });
     });
+
 });
