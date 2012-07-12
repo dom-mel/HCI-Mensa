@@ -29,7 +29,7 @@ include dirname(__FILE__).'/tpl/header.php';
 
 </div>
 
-<div class="row">
+<div class="row hidden-phone">
     <div class="span12">
         <ul class="nav nav-tabs">
             <?php $first = true ?>
@@ -42,6 +42,22 @@ include dirname(__FILE__).'/tpl/header.php';
                 <?php $i++ ?>
             <?php endforeach ?>
         </ul>
+    </div>
+</div>
+
+<div class="row visible-phone">
+    <div class="span12">
+        <select id="daySelector">
+            <?php $first = true ?>
+            <?php $i = 0 ?>
+            <?php foreach ($plan->getDays() as $day): ?>
+            <option value="<?php out($i) ?>">
+                <?php out($day) ?>
+            </option>
+            <?php $first = false ?>
+            <?php $i++ ?>
+            <?php endforeach ?>
+        </select>
     </div>
 </div>
 

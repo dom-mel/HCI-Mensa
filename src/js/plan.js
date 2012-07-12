@@ -23,8 +23,19 @@ $(document).ready(function() {
             $(this).parent().addClass('active');
             var id = $(this).attr('id');
             $('.'+id).show();
+            $('#daySelector').val(id.substr(3));
         });
     }
+
+    $('#daySelector').change(function(){
+        var day = $(this).val();
+        for (var j = 0; j < 5; j++) {
+            $('#day'+j).parent().removeClass('active');
+            $('.day'+j).hide();
+        }
+        $('#day'+day).parent().addClass('active');
+        $('.day'+day).show();
+    });
 });
 
 $(document).ready(function(){
