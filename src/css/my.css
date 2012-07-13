@@ -45,3 +45,7 @@ img.favorite {
 .addition .addition-hover {
     display: none;
 }
+
+#daySelector {
+    display: none;
+}

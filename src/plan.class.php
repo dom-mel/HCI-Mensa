@@ -25,7 +25,8 @@ class Plan {
     private function prepareMeals($data) {
         $result = array();
         foreach ($data as $meal) {
-            $day = strtotime($meal->datum);
+            $date = explode('.', $meal->datum);
+            $day = mktime(0, 0, 0, $date[1], $date[0], $date[2]);
             $type = $meal->typ;
 
             if (!isset($result[$day])) {

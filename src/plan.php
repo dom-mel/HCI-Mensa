@@ -25,6 +25,11 @@ include dirname(__FILE__).'/tpl/header.php';
                 <option value="3">Gäste</option>
             </select>
         </p>
+        <?php $count = 0; ?>
+        <?php foreach ($data['meals'] as $d => $meals) { ?>
+            <p class="day<?php echo $count ?>">Speiseplan für den <?php echo date('j. n. Y', $d) ?></p>
+            <?php $count++; ?>
+        <?php } ?>
     </div>
 
 </div>
